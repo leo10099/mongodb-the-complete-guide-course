@@ -2,7 +2,7 @@
 
 #### Mongo DB Shell
 
-##### 1. Start process
+##### Start process
 
 Start mongoDB process in macOS pointing to DB folders path. It should have a parent folder named _data_ with a children called _db_ that holds the databses. It can also take an argument to change the default port (27017)
 
@@ -10,19 +10,19 @@ Start mongoDB process in macOS pointing to DB folders path. It should have a par
 
 ---
 
-##### 2. See databases
+##### See databases
 
 `show dbs`
 
 ---
 
-##### 3. Switch to database
+##### Switch to database
 
 `use [name]`
 
 ---
 
-##### 4. BSON
+##### BSON
 
 - BSON is more space efficient than JSON
 - Supports _ObjectId_ type
@@ -30,12 +30,28 @@ Start mongoDB process in macOS pointing to DB folders path. It should have a par
 
 ---
 
-##### 5. Objects Unique IDs
+##### Objects Unique IDs
 
 - You can insert a document using the _\_id_ property without relaying on mongoDB generating it but it has to be unique or mongo will throw an error.
 
 ---
 
-##### 6. CRUD Operations
+##### CRUD Operations
 
-[crud]: ("/images/01.png")
+![](/images/01.png "Crud Operations")
+
+---
+
+#### The Cursor object
+
+- When performing a document search with the _find_ method mongoDB doesen't return all data. Rather, it returns a _cursor_ object with a limited set of data. It contains metada that allows to cycle through the data.
+
+- In order to get all data in a cursor object the _toArray_ method has to be used. You can also use the _forEach_ method to perform operations on every document of the cursor.
+
+---
+
+#### Projection
+
+- It simply allows to use a partial document to send only the required that the client needs.
+
+![](/images/02.png "Projection")
