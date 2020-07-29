@@ -54,11 +54,11 @@ Start mongoDB process in macOS pointing to DB folders path. It should have a par
 
 - It simply allows to use a partial document to send only the required that the client needs. It serves as data transformation.
 
-![](/images/02.png "Projection")
+![](/images/02.png | width=300)
 
 Projection works by passing as a second argument with an object that lists the properties required with a value of _1_ or filter them out with a _0_ value
 
-![](/images/03.png "Projection in action")
+![](/images/03.png | width=300)
 
 ---
 
@@ -66,7 +66,7 @@ Projection works by passing as a second argument with an object that lists the p
 
 - Core feature that allows document nesting
 
-![](/images/04.png "Embedded Documents")
+![](/images/04.png | width=300)
 
 ---
 
@@ -74,4 +74,4 @@ Projection works by passing as a second argument with an object that lists the p
 
 - You can use the object notation (all wrapped as a string) to access a filtered nested document
 
-![](/images/05.png "Accessing nested data")
+![](/images/05.png | width=300 )
