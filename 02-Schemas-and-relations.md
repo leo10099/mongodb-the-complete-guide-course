@@ -26,3 +26,10 @@
 - Getting related data in one step merged together
 
 ![](/images/02/05.png "$lookup")
+
+---
+
+#### Schema validation
+
+![](/images/02/06.png "Schema validation")
+![](/images/02/07.png "Schema validation example")
